@@ -4,7 +4,12 @@ This repository contains the code for the democracy bots I've built. Readme is s
 # Installation and local launch
 1. Clone this repo:
 ```
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global user.useConfigOnly true
+
 git clone --single-branch ssh://git@github.com:443/<your_username>/banofbot.git
+git config --local user.name "<your_username>"
 git config --local user.email <your_id>+<your_username>@users.noreply.github.com
 ```
 2. Launch the [mongo database](https://www.mongodb.com/) locally
